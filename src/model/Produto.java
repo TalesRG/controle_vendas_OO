@@ -40,7 +40,8 @@ public class Produto {
     public void validarProduto() throws DadosInvalidosException {
         Validador.validarCampoPreenchido(nome, "Prencha o nome");
         Validador.validarCampoPreenchido(fabricante, "Preencha o fabricante");
-
+        
+        //se o preco custo ou preco venda for menor que zero, muda seus valores para zero
         if (precoCusto < 0 || precoVenda < 0) {
             precoCusto = 0.0;
             precoVenda = 0.0;

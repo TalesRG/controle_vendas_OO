@@ -40,7 +40,10 @@ public class ClienteListRepository implements ClienteRepository {
      */
     @Override
     public void editar(Cliente cliente) {
-        //
+        /*Se o cliente for pessoa fisica procura a posicao na do cliente na lista pelo cpf 
+         se encontrar edita o cliente anterior
+         caso contrario faça a mesma coisa porem com pessoa juridica
+    	*/
         if (cliente.isPessoaFisica()) {
             PessoaFisica pessoaFisica = (PessoaFisica) cliente;
             int posicaoNaLista = procurarPosicaoPessaoFisica(pessoaFisica.getCpf());
@@ -166,7 +169,11 @@ public class ClienteListRepository implements ClienteRepository {
      * @param cpf
      * @return int
      */
-    private int procurarPosicaoPessaoFisica(String cpf) { // cpf = 3
+    private int procurarPosicaoPessaoFisica(String cpf) { 
+    	/* 
+    	 Percorre a lista de clientes se encontrar um cliente pessoa fisica retorna a posicao 
+    	 dele na lista 
+    	 */
         int contador = -1; // 2
         for (Cliente cliente : storage) {
             contador = 1 + contador;
@@ -187,6 +194,10 @@ public class ClienteListRepository implements ClienteRepository {
      * @return int
      */
     private int procurarPosicaoPessaoJuridica(String cnpj) {
+    	/* 
+   	 Percorre a lista de clientes se encontrar um cliente pessoa juriica retorna a posicao 
+   	 dele na lista 
+   	 */
         int contador = -1;
         for (Cliente cliente : storage) {
             contador = 1 + contador;

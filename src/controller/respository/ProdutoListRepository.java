@@ -74,6 +74,7 @@ public class ProdutoListRepository implements ProdutoRepository {
      */
     @Override
     public void editar(Produto produto) {
+    	// se encontar posicao do produto na lista edita ele
         int posicaoNaLista = procurarPosicaoProduto(produto.getNome());
         if (posicaoNaLista != -1) {
             storage.set(posicaoNaLista, produto.clone());
@@ -88,6 +89,10 @@ public class ProdutoListRepository implements ProdutoRepository {
      * @return int
      */
     private int procurarPosicaoProduto(String nomeProduto) {
+    	/* 
+   	 Percorre a lista de produtos se encontrar um produto retorna a posicao 
+   	 dele na lista 
+   	 */
         int contador = -1;
         for (Produto produto : storage) {
             contador = 1 + contador;

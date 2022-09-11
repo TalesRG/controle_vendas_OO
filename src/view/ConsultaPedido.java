@@ -79,7 +79,7 @@ public class ConsultaPedido extends Componentes {
     private void buscarPedido(ActionEvent actionEvent) {
         int idPedidoBusca = Integer.parseInt(JOptionPane.showInputDialog("Insira o id do cliente que deseja buscar"));
         var pedidoEncontrado = pedidoService.retornarPedidoPorId(idPedidoBusca);
-
+        //Se não encotrar cliente mostrar msg de erro caso contrario mostrar o cliente
         if (Optional.empty().equals(pedidoEncontrado)) {
             JOptionPane.showMessageDialog(this, "Cliente não encontrado");
         } else {
@@ -155,6 +155,7 @@ public class ConsultaPedido extends Componentes {
      * @return void
      */
     private void salvarPosicaoSelecinadaNaLista(ListSelectionEvent e) {
+    	//Salva a posicao do elemento que o usuario clicar
         if (e.getValueIsAdjusting()) {
             return;
         }

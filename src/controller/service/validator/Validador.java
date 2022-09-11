@@ -24,7 +24,8 @@ public class Validador {
      * @throws DadosInvalidosException
      */
     public static void validarCampoPreenchidoComMascara(String campo, String caracteresRemover, String mensagemErro) throws DadosInvalidosException {
-        if (campo == null) {
+        //valida se o campo com mascara inserido é nulo
+    	if (campo == null) {
             throw new DadosInvalidosException(mensagemErro);
         }
         var regexRemover = String.format("[%s]", caracteresRemover);
@@ -41,7 +42,8 @@ public class Validador {
      * @throws DadosInvalidosException
      */
     public static void validarCampoPreenchido(String campo, String mensagemErro) throws DadosInvalidosException {
-        if (campo == null || campo.trim().equals("")) {
+       //valida se o campo preenchido é nulo
+    	if (campo == null || campo.trim().equals("")) {
             throw new DadosInvalidosException(mensagemErro);
         }
     }

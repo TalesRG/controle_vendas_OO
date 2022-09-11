@@ -77,6 +77,7 @@ public class PedidoListRepository implements PedidoRepository {
     @Override
     public void editar(Pedido pedido) {
         int posicaoNaLista = procurarPosicaoPedido(pedido.getId());
+        // se encontrar o pedido edita ele
         if (posicaoNaLista != -1) {
             storage.set(posicaoNaLista, pedido.clone());
         }
@@ -91,6 +92,10 @@ public class PedidoListRepository implements PedidoRepository {
      * @return int
      */
     private int procurarPosicaoPedido(String id) {
+    	/* 
+   	 Percorre a lista de pedidos se encontrar um pedido a posicao 
+   	 dele na lista 
+   	 */
         int contador = -1;
         for (Pedido pedido : storage) {
             contador = 1 + contador;
