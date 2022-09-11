@@ -1,0 +1,192 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"bd8334ff-fc57-445b-9b79-a9438404c704\" name=\"Changes\" comment=\"adicionando validação de dados\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2022_00_10__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2022_00_10__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/ControleVendasApplication.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/ControleVendasApplication.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/respository/ClienteRepository.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/respository/ClienteRepository.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/service/ClienteService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/service/ClienteService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/model/Cliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/model/Cliente.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/model/PessoaFisica.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/model/PessoaFisica.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/view/ConsultaCliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/view/ConsultaCliente.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"89818144-d416-4187-9ead-96405056743e\" name=\"Changes by Tata\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/view/ConsultaCliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/view/ConsultaCliente.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" name=\"Changes by user\" comment=\"Changes by user\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/view/MascaraUtil.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/respository/ClienteRepository.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/respository/ClienteRepository.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/service/ClienteService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/service/ClienteService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/service/validator/Validador.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/service/validator/Validador.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/model/Cliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/model/Cliente.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/model/PessoaFisica.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/model/PessoaFisica.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/model/PessoaJuridica.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/model/PessoaJuridica.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/view/CadastroCliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/view/CadastroCliente.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/view/ConsultaCliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/view/ConsultaCliente.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"package-info\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"LineStatusTrackerManager\">\r\n    <file path=\"$PROJECT_DIR$/src/model/PessoaFisica.java\">\r\n      <ranges>\r\n        <range start1=\"3\" end1=\"4\" start2=\"3\" end2=\"4\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"5\" end1=\"6\" start2=\"5\" end2=\"6\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"8\" end1=\"9\" start2=\"8\" end2=\"9\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"15\" end1=\"16\" start2=\"15\" end2=\"16\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"45\" end1=\"45\" start2=\"45\" end2=\"50\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/src/model/Cliente.java\">\r\n      <ranges>\r\n        <range start1=\"5\" end1=\"5\" start2=\"5\" end2=\"7\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"6\" end1=\"7\" start2=\"8\" end2=\"8\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"22\" end1=\"22\" start2=\"23\" end2=\"24\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"23\" end1=\"27\" start2=\"25\" end2=\"29\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"28\" end1=\"35\" start2=\"30\" end2=\"30\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/src/view/ConsultaCliente.java\">\r\n      <ranges>\r\n        <range start1=\"3\" end1=\"3\" start2=\"3\" end2=\"6\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"5\" end1=\"5\" start2=\"8\" end2=\"9\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"6\" end1=\"6\" start2=\"10\" end2=\"11\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"15\" end1=\"15\" start2=\"20\" end2=\"21\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"16\" end1=\"19\" start2=\"22\" end2=\"22\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"20\" end1=\"20\" start2=\"23\" end2=\"29\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"21\" end1=\"21\" start2=\"30\" end2=\"31\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"23\" end1=\"62\" start2=\"33\" end2=\"38\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"63\" end1=\"73\" start2=\"39\" end2=\"47\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"74\" end1=\"79\" start2=\"48\" end2=\"53\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"80\" end1=\"93\" start2=\"54\" end2=\"67\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"97\" end1=\"97\" start2=\"71\" end2=\"76\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"98\" end1=\"103\" start2=\"77\" end2=\"91\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"104\" end1=\"109\" start2=\"92\" end2=\"97\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"110\" end1=\"110\" start2=\"98\" end2=\"99\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"111\" end1=\"113\" start2=\"100\" end2=\"103\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"114\" end1=\"115\" start2=\"104\" end2=\"105\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"125\" end1=\"125\" start2=\"115\" end2=\"116\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"126\" end1=\"131\" start2=\"117\" end2=\"122\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"132\" end1=\"134\" start2=\"123\" end2=\"125\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"135\" end1=\"135\" start2=\"126\" end2=\"128\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n        <range start1=\"136\" end1=\"136\" start2=\"129\" end2=\"178\" changelist=\"89818144-d416-4187-9ead-96405056743e\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java\">\r\n      <ranges>\r\n        <range start1=\"12\" end1=\"14\" start2=\"12\" end2=\"12\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"17\" end1=\"19\" start2=\"15\" end2=\"15\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"20\" end1=\"22\" start2=\"16\" end2=\"16\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"24\" end1=\"24\" start2=\"18\" end2=\"31\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"25\" end1=\"40\" start2=\"32\" end2=\"32\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"44\" end1=\"44\" start2=\"36\" end2=\"37\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"46\" end1=\"46\" start2=\"39\" end2=\"42\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"58\" end1=\"58\" start2=\"54\" end2=\"55\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"74\" end1=\"75\" start2=\"71\" end2=\"72\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"76\" end1=\"77\" start2=\"73\" end2=\"74\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"78\" end1=\"78\" start2=\"75\" end2=\"83\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"79\" end1=\"80\" start2=\"84\" end2=\"97\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/src/controller/respository/ClienteRepository.java\">\r\n      <ranges>\r\n        <range start1=\"10\" end1=\"10\" start2=\"10\" end2=\"11\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"12\" end1=\"13\" start2=\"13\" end2=\"19\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"19\" end1=\"21\" start2=\"25\" end2=\"27\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/src/controller/service/ClienteService.java\">\r\n      <ranges>\r\n        <range start1=\"20\" end1=\"23\" start2=\"20\" end2=\"22\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"27\" end1=\"30\" start2=\"26\" end2=\"28\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n        <range start1=\"33\" end1=\"33\" start2=\"31\" end2=\"36\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"46\" end1=\"48\" start2=\"49\" end2=\"51\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"50\" end1=\"52\" start2=\"53\" end2=\"61\" changelist=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" />\r\n        <range start1=\"53\" end1=\"53\" start2=\"62\" end2=\"65\" changelist=\"bd8334ff-fc57-445b-9b79-a9438404c704\" />\r\n      </ranges>\r\n    </file>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2DMzdzHRvgY0oZWOEf6JSBcYLuQ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/tales/OneDrive/Documentos/controle-de-vendas&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Application.ControleVendasApplication\">\r\n    <configuration name=\"ControleVendasApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ControleVendasApplication\" />\r\n      <module name=\"controle-vendas\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ClientListRepositoryTest.retornarClientePessoaFisica\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"controle-vendas\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"test.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"test\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.ClientListRepositoryTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"retornarClientePessoaFisica\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.ControleVendasApplication\" />\r\n        <item itemvalue=\"JUnit.ClientListRepositoryTest.retornarClientePessoaFisica\" />\r\n        <item itemvalue=\"JUnit.ClientListRepositoryTest.retornarClientePessoaFisica\" />\r\n        <item itemvalue=\"Application.ControleVendasApplication\" />\r\n        <item itemvalue=\"Application.ControleVendasApplication\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"bd8334ff-fc57-445b-9b79-a9438404c704\" name=\"Changes\" comment=\"\" />\r\n      <created>1660523835118</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1660523835118</updated>\r\n      <workItem from=\"1660523836998\" duration=\"3216000\" />\r\n      <workItem from=\"1660585153388\" duration=\"36000\" />\r\n      <workItem from=\"1660664086925\" duration=\"5509000\" />\r\n      <workItem from=\"1660734557562\" duration=\"3027000\" />\r\n      <workItem from=\"1660738210219\" duration=\"6807000\" />\r\n      <workItem from=\"1660747596792\" duration=\"1216000\" />\r\n      <workItem from=\"1660776135390\" duration=\"4915000\" />\r\n      <workItem from=\"1660789990576\" duration=\"1031000\" />\r\n      <workItem from=\"1660791594448\" duration=\"2884000\" />\r\n      <workItem from=\"1660794598649\" duration=\"2612000\" />\r\n      <workItem from=\"1660827295461\" duration=\"12000\" />\r\n      <workItem from=\"1660871965969\" duration=\"13447000\" />\r\n      <workItem from=\"1661014344125\" duration=\"5711000\" />\r\n      <workItem from=\"1661137382339\" duration=\"1039000\" />\r\n      <workItem from=\"1661180836641\" duration=\"24000\" />\r\n      <workItem from=\"1661222652142\" duration=\"6018000\" />\r\n      <workItem from=\"1661781085854\" duration=\"94000\" />\r\n      <workItem from=\"1661864659105\" duration=\"5754000\" />\r\n      <workItem from=\"1661947294739\" duration=\"2253000\" />\r\n      <workItem from=\"1662078345607\" duration=\"15059000\" />\r\n      <workItem from=\"1662141930025\" duration=\"236000\" />\r\n      <workItem from=\"1662142196840\" duration=\"35000\" />\r\n      <workItem from=\"1662144689379\" duration=\"30392000\" />\r\n      <workItem from=\"1662310723745\" duration=\"20701000\" />\r\n      <workItem from=\"1662425024712\" duration=\"6769000\" />\r\n      <workItem from=\"1662470639005\" duration=\"8248000\" />\r\n      <workItem from=\"1662504576763\" duration=\"18589000\" />\r\n      <workItem from=\"1662584780671\" duration=\"17724000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Criando Projeto\">\r\n      <created>1660523980511</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1660523980511</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Cadastro pronto\">\r\n      <created>1660882144939</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1660882144939</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Adicionando produto e cliente\">\r\n      <created>1661027202712</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1661027202712</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Adicionando muita coisa\">\r\n      <created>1662250770088</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662250770088</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Adicionando muita coisa\">\r\n      <created>1662258060989</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662258060989</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Adicionando muita coisa\">\r\n      <created>1662314778930</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662314778930</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Refatorando codigo\">\r\n      <created>1662339493435</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662339493435</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"adicionando validação de dados\">\r\n      <created>1662471751081</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662471751081</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Refatorando validação\">\r\n      <created>1662583489951</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662583489951</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Criando Projeto\" />\r\n    <MESSAGE value=\"Cadastro pronto\" />\r\n    <MESSAGE value=\"Adicionando produto e cliente\" />\r\n    <MESSAGE value=\"Adicionando muita coisa\" />\r\n    <MESSAGE value=\"Refatorando codigo\" />\r\n    <MESSAGE value=\"adicionando validação de dados\" />\r\n    <MESSAGE value=\"Refatorando validação\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Refatorando validação\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.NullPointerException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"5\" />\r\n        </breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>jar://C:/Program Files/Java/jdk-11.0.15/lib/src.zip!/java.base/java/math/BigDecimal.java</url>\r\n          <option name=\"timeStamp\" value=\"7\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java</url>\r\n          <line>20</line>\r\n          <option name=\"timeStamp\" value=\"14\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/view/ConsultaCliente.java</url>\r\n          <line>117</line>\r\n          <option name=\"timeStamp\" value=\"16\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/view/ConsultaCliente.java</url>\r\n          <line>146</line>\r\n          <option name=\"timeStamp\" value=\"19\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision db9101d9a90c02f63a81c46245032ae0c241937a)
++++ b/.idea/workspace.xml	(date 1662607719295)
+@@ -1,32 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="bd8334ff-fc57-445b-9b79-a9438404c704" name="Changes" comment="adicionando validação de dados">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2022_00_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2022_00_10__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/ControleVendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControleVendasApplication.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/respository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/respository/ClienteRepository.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/service/ClienteService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cliente.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/model/PessoaFisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PessoaFisica.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/view/ConsultaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ConsultaCliente.java" afterDir="false" />
+-    </list>
+-    <list id="89818144-d416-4187-9ead-96405056743e" name="Changes by Tata" comment="">
+-      <change beforePath="$PROJECT_DIR$/src/view/ConsultaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ConsultaCliente.java" afterDir="false" />
+-    </list>
+-    <list id="f3e9b060-dce0-4745-8214-b0a3287793cc" name="Changes by user" comment="Changes by user">
+-      <change afterPath="$PROJECT_DIR$/src/view/MascaraUtil.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/respository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/respository/ClienteRepository.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/service/ClienteService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/service/validator/Validador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/service/validator/Validador.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cliente.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/model/PessoaFisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PessoaFisica.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/model/PessoaJuridica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PessoaJuridica.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/view/CadastroCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CadastroCliente.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/view/ConsultaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ConsultaCliente.java" afterDir="false" />
+-    </list>
++    <list default="true" id="bd8334ff-fc57-445b-9b79-a9438404c704" name="Changes" comment="adicionando validação de dados" />
++    <list id="89818144-d416-4187-9ead-96405056743e" name="Changes by Tata" comment="" />
++    <list id="f3e9b060-dce0-4745-8214-b0a3287793cc" name="Changes by user" comment="Changes by user" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -44,90 +21,11 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="feature/adicionando_buscarExcluir" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="LineStatusTrackerManager">
+-    <file path="$PROJECT_DIR$/src/model/PessoaFisica.java">
+-      <ranges>
+-        <range start1="3" end1="4" start2="3" end2="4" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="5" end1="6" start2="5" end2="6" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="8" end1="9" start2="8" end2="9" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="15" end1="16" start2="15" end2="16" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="45" end1="45" start2="45" end2="50" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/src/model/Cliente.java">
+-      <ranges>
+-        <range start1="5" end1="5" start2="5" end2="7" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="6" end1="7" start2="8" end2="8" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="22" end1="22" start2="23" end2="24" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="23" end1="27" start2="25" end2="29" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="28" end1="35" start2="30" end2="30" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/src/view/ConsultaCliente.java">
+-      <ranges>
+-        <range start1="3" end1="3" start2="3" end2="6" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="5" end1="5" start2="8" end2="9" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="6" end1="6" start2="10" end2="11" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="15" end1="15" start2="20" end2="21" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="16" end1="19" start2="22" end2="22" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="20" end1="20" start2="23" end2="29" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="21" end1="21" start2="30" end2="31" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="23" end1="62" start2="33" end2="38" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="63" end1="73" start2="39" end2="47" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="74" end1="79" start2="48" end2="53" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="80" end1="93" start2="54" end2="67" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="97" end1="97" start2="71" end2="76" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="98" end1="103" start2="77" end2="91" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="104" end1="109" start2="92" end2="97" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="110" end1="110" start2="98" end2="99" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="111" end1="113" start2="100" end2="103" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="114" end1="115" start2="104" end2="105" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="125" end1="125" start2="115" end2="116" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="126" end1="131" start2="117" end2="122" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="132" end1="134" start2="123" end2="125" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="135" end1="135" start2="126" end2="128" changelist="89818144-d416-4187-9ead-96405056743e" />
+-        <range start1="136" end1="136" start2="129" end2="178" changelist="89818144-d416-4187-9ead-96405056743e" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java">
+-      <ranges>
+-        <range start1="12" end1="14" start2="12" end2="12" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="17" end1="19" start2="15" end2="15" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="20" end1="22" start2="16" end2="16" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="24" end1="24" start2="18" end2="31" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="25" end1="40" start2="32" end2="32" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="44" end1="44" start2="36" end2="37" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="46" end1="46" start2="39" end2="42" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="58" end1="58" start2="54" end2="55" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="74" end1="75" start2="71" end2="72" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="76" end1="77" start2="73" end2="74" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="78" end1="78" start2="75" end2="83" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="79" end1="80" start2="84" end2="97" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/src/controller/respository/ClienteRepository.java">
+-      <ranges>
+-        <range start1="10" end1="10" start2="10" end2="11" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="12" end1="13" start2="13" end2="19" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="19" end1="21" start2="25" end2="27" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/src/controller/service/ClienteService.java">
+-      <ranges>
+-        <range start1="20" end1="23" start2="20" end2="22" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="27" end1="30" start2="26" end2="28" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-        <range start1="33" end1="33" start2="31" end2="36" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="46" end1="48" start2="49" end2="51" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="50" end1="52" start2="53" end2="61" changelist="f3e9b060-dce0-4745-8214-b0a3287793cc" />
+-        <range start1="53" end1="53" start2="62" end2="65" changelist="bd8334ff-fc57-445b-9b79-a9438404c704" />
+-      </ranges>
+-    </file>
+-  </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+@@ -178,10 +76,10 @@
+     <recent_temporary>
+       <list>
+         <item itemvalue="Application.ControleVendasApplication" />
+-        <item itemvalue="JUnit.ClientListRepositoryTest.retornarClientePessoaFisica" />
+         <item itemvalue="JUnit.ClientListRepositoryTest.retornarClientePessoaFisica" />
+         <item itemvalue="Application.ControleVendasApplication" />
+-        <item itemvalue="Application.ControleVendasApplication" />
++        <item itemvalue="JUnit.ClientListRepositoryTest.retornarClientePessoaFisica" />
++        <item itemvalue="JUnit.ClientListRepositoryTest.retornarClientePessoaFisica" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -285,7 +183,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1662583489951</updated>
+     </task>
+-    <option name="localTasksCounter" value="10" />
++    <task id="LOCAL-00010" summary="Adicionando alteração essencial">
++      <created>1662607665968</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1662607665968</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -310,7 +215,8 @@
+     <MESSAGE value="Refatorando codigo" />
+     <MESSAGE value="adicionando validação de dados" />
+     <MESSAGE value="Refatorando validação" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Refatorando validação" />
++    <MESSAGE value="Adicionando alteração essencial" />
++    <option name="LAST_COMMIT_MESSAGE" value="Adicionando alteração essencial" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+@@ -330,12 +236,12 @@
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-line">
+           <url>file://$PROJECT_DIR$/src/view/ConsultaCliente.java</url>
+-          <line>117</line>
++          <line>136</line>
+           <option name="timeStamp" value="16" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-line">
+           <url>file://$PROJECT_DIR$/src/view/ConsultaCliente.java</url>
+-          <line>146</line>
++          <line>165</line>
+           <option name="timeStamp" value="19" />
+         </line-breakpoint>
+       </breakpoints>

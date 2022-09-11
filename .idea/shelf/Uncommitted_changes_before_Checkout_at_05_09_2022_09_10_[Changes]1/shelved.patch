@@ -1,0 +1,44 @@
+Index: src/controller/respository/ClienteListRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package controller.respository;\r\n\r\nimport model.Cliente;\r\nimport model.PessoaFisica;\r\nimport model.PessoaJuridica;\r\n\r\nimport java.util.*;\r\nimport java.util.stream.Collectors;\r\n\r\npublic class ClienteListRepository implements ClienteRepository {\r\n\r\n    private static List<Cliente> storage = new ArrayList<>();\r\n\r\n    private static int idAtual = 1;\r\n\r\n    @Override\r\n    public void salvar(Cliente cliente) {\r\n\r\n        cliente.setId(String.valueOf(idAtual));\r\n        storage.add(cliente);\r\n\r\n        idAtual++;\r\n    }\r\n\r\n    @Override\r\n    public Optional<Cliente> pesquisarPorId(String idPesquisado) {\r\n\r\n        /*for (Cliente cliente : storage) {\r\n            if(cliente.getId().equals(idPesquisado)){\r\n                return Optional.of(cliente);\r\n            }\r\n        }\r\n        return Optional.empty();*/\r\n\r\n        return storage\r\n                .stream()\r\n                .filter(clienteArmazenado -> clienteArmazenado.getId().equals(idPesquisado))\r\n                .findFirst();\r\n    }\r\n\r\n    public List<PessoaFisica> pesquisarPessoasFisicas() {\r\n        return storage\r\n                .stream()\r\n                .filter(clienteArmazenado -> clienteArmazenado.isPessoaFisica())\r\n                .map(clienteFiltrado -> (PessoaFisica) clienteFiltrado)\r\n                .collect(Collectors.toList());\r\n    }\r\n\r\n    public List<PessoaJuridica> pesquisarPessoasJuridicas() {\r\n        return storage\r\n                .stream()\r\n                .filter(clienteArmazenado -> clienteArmazenado.isPessoaJuridica())\r\n                .map(clienteFiltrado -> (PessoaJuridica) clienteFiltrado)\r\n                .collect(Collectors.toList());\r\n    }\r\n\r\n    public List<Cliente> pesquisarClientes() {\r\n        return storage;\r\n    }\r\n\r\n    public void deletar(String idDeletar) {\r\n        storage\r\n                .removeIf(clienteArmazenado -> clienteArmazenado.getId().equals(idDeletar));\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/controller/respository/ClienteListRepository.java b/src/controller/respository/ClienteListRepository.java
+--- a/src/controller/respository/ClienteListRepository.java	
++++ b/src/controller/respository/ClienteListRepository.java	
+@@ -23,6 +23,7 @@
+     }
+ 
+     @Override
++    //Retornar cliente pelo id selecionado
+     public Optional<Cliente> pesquisarPorId(String idPesquisado) {
+ 
+         /*for (Cliente cliente : storage) {
+@@ -37,7 +38,7 @@
+                 .filter(clienteArmazenado -> clienteArmazenado.getId().equals(idPesquisado))
+                 .findFirst();
+     }
+-
++    //Retornar Somente os clientes Pessoa fisica
+     public List<PessoaFisica> pesquisarPessoasFisicas() {
+         return storage
+                 .stream()
+@@ -46,6 +47,7 @@
+                 .collect(Collectors.toList());
+     }
+ 
++    //Retornar Somente os clientes Pessoa juridica
+     public List<PessoaJuridica> pesquisarPessoasJuridicas() {
+         return storage
+                 .stream()
+@@ -53,7 +55,7 @@
+                 .map(clienteFiltrado -> (PessoaJuridica) clienteFiltrado)
+                 .collect(Collectors.toList());
+     }
+-
++    //Retornar todos os clientes
+     public List<Cliente> pesquisarClientes() {
+         return storage;
+     }

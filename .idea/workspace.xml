@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd8334ff-fc57-445b-9b79-a9438404c704" name="Changes" comment="javadoc e indentacao">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_09_2022_09_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_09_2022_09_10__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_09_2022_09_10__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_09_2022_09_10__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_09_2022_21_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_09_2022_21_05__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2022_00_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2022_00_10__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_09_2022_00_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_09_2022_00_29__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controle-de-vendas.userlibraries" beforeDir="false" afterPath="$PROJECT_DIR$/controle-de-vendas.userlibraries" afterDir="false" />
+    </list>
+    <list id="89818144-d416-4187-9ead-96405056743e" name="Changes by Tata" comment="" />
+    <list id="f3e9b060-dce0-4745-8214-b0a3287793cc" name="Changes by user" comment="Changes by user" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="featture/botaoBuscarExcluirEditar_em_todas_classes" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DMzdzHRvgY0oZWOEf6JSBcYLuQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tales/OneDrive/Documentos/controle-de-vendas&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Menu">
+    <configuration name="ControleVendasApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ControleVendasApplication" />
+      <module name="controle-vendas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Menu" />
+      <module name="controle-vendas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientListRepositoryTest.retornarClientePessoaFisica" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="controle-vendas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ClientListRepositoryTest" />
+      <option name="METHOD_NAME" value="retornarClientePessoaFisica" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Menu" />
+        <item itemvalue="Application.ControleVendasApplication" />
+        <item itemvalue="JUnit.ClientListRepositoryTest.retornarClientePessoaFisica" />
+        <item itemvalue="Application.ControleVendasApplication" />
+        <item itemvalue="JUnit.ClientListRepositoryTest.retornarClientePessoaFisica" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd8334ff-fc57-445b-9b79-a9438404c704" name="Changes" comment="" />
+      <created>1660523835118</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660523835118</updated>
+      <workItem from="1660523836998" duration="3216000" />
+      <workItem from="1660585153388" duration="36000" />
+      <workItem from="1660664086925" duration="5509000" />
+      <workItem from="1660734557562" duration="3027000" />
+      <workItem from="1660738210219" duration="6807000" />
+      <workItem from="1660747596792" duration="1216000" />
+      <workItem from="1660776135390" duration="4915000" />
+      <workItem from="1660789990576" duration="1031000" />
+      <workItem from="1660791594448" duration="2884000" />
+      <workItem from="1660794598649" duration="2612000" />
+      <workItem from="1660827295461" duration="12000" />
+      <workItem from="1660871965969" duration="13447000" />
+      <workItem from="1661014344125" duration="5711000" />
+      <workItem from="1661137382339" duration="1039000" />
+      <workItem from="1661180836641" duration="24000" />
+      <workItem from="1661222652142" duration="6018000" />
+      <workItem from="1661781085854" duration="94000" />
+      <workItem from="1661864659105" duration="5754000" />
+      <workItem from="1661947294739" duration="2253000" />
+      <workItem from="1662078345607" duration="15059000" />
+      <workItem from="1662141930025" duration="236000" />
+      <workItem from="1662142196840" duration="35000" />
+      <workItem from="1662144689379" duration="30392000" />
+      <workItem from="1662310723745" duration="20701000" />
+      <workItem from="1662425024712" duration="6769000" />
+      <workItem from="1662470639005" duration="8248000" />
+      <workItem from="1662504576763" duration="18589000" />
+      <workItem from="1662584780671" duration="17724000" />
+      <workItem from="1662694904814" duration="12394000" />
+      <workItem from="1662777540831" duration="4727000" />
+      <workItem from="1662811427632" duration="9577000" />
+      <workItem from="1662910714922" duration="901000" />
+      <workItem from="1662930378252" duration="404000" />
+      <workItem from="1662931127914" duration="103000" />
+    </task>
+    <task id="LOCAL-00001" summary="Criando Projeto">
+      <created>1660523980511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660523980511</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cadastro pronto">
+      <created>1660882144939</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660882144939</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adicionando produto e cliente">
+      <created>1661027202712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661027202712</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adicionando muita coisa">
+      <created>1662250770088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662250770088</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Adicionando muita coisa">
+      <created>1662258060989</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662258060989</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adicionando muita coisa">
+      <created>1662314778930</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662314778930</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refatorando codigo">
+      <created>1662339493435</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662339493435</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adicionando validação de dados">
+      <created>1662471751081</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662471751081</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refatorando validação">
+      <created>1662583489951</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662583489951</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adicionando botoes em produto">
+      <created>1662733645012</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662733645012</updated>
+    </task>
+    <task id="LOCAL-00011" summary="excluindo pacotes">
+      <created>1662924817134</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662924817134</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criando Projeto" />
+    <MESSAGE value="Cadastro pronto" />
+    <MESSAGE value="Adicionando produto e cliente" />
+    <MESSAGE value="Adicionando muita coisa" />
+    <MESSAGE value="Refatorando codigo" />
+    <MESSAGE value="adicionando validação de dados" />
+    <MESSAGE value="Refatorando validação" />
+    <MESSAGE value="adicionando botoes em produto" />
+    <MESSAGE value="excluindo pacotes" />
+    <option name="LAST_COMMIT_MESSAGE" value="excluindo pacotes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk-11.0.15/lib/src.zip!/java.base/java/math/BigDecimal.java</url>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/controle_de_vendas$ControleVendasApplication.ic" NAME="ControleVendasApplication Coverage Results" MODIFIED="1662704230761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

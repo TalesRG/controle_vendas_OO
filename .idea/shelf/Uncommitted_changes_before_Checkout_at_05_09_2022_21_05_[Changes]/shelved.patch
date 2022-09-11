@@ -1,0 +1,98 @@
+Index: src/controller/respository/ClienteListRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package controller.respository;\r\n\r\nimport model.Cliente;\r\nimport model.PessoaFisica;\r\nimport model.PessoaJuridica;\r\n\r\nimport java.util.*;\r\nimport java.util.stream.Collectors;\r\n\r\npublic class ClienteListRepository implements ClienteRepository {\r\n\r\n    private  static List<Cliente> storage = new ArrayList<>();\r\n\r\n    private static int idAtual = 1;\r\n\r\n    @Override\r\n    public void salvar(Cliente cliente) {\r\n\r\n        cliente.setId(String.valueOf(idAtual));\r\n        storage.add(cliente);\r\n\r\n        idAtual++;\r\n    }\r\n\r\n    @Override\r\n    public Optional<Cliente> pesquisarPorId(String idPesquisado) {\r\n\r\n        /*for (Cliente cliente : storage) {\r\n            if(cliente.getId().equals(idPesquisado)){\r\n                return Optional.of(cliente);\r\n            }\r\n        }\r\n        return Optional.empty();*/\r\n\r\n        return storage\r\n                .stream()\r\n                .filter(clienteArmazenado -> clienteArmazenado.getId().equals(idPesquisado))\r\n                .findFirst();\r\n    }\r\n\r\n    public List<PessoaFisica> pesquisarPessoasFisicas() {\r\n        return storage\r\n                .stream()\r\n                .filter(clienteArmazenado -> clienteArmazenado.isPessoaFisica())\r\n                .map(clienteFiltrado -> (PessoaFisica) clienteFiltrado)\r\n                .collect(Collectors.toList());\r\n    }\r\n\r\n    public List<PessoaJuridica> pesquisarPessoasJuridicas() {\r\n        return storage\r\n                .stream()\r\n                .filter(clienteArmazenado -> clienteArmazenado.isPessoaJuridica())\r\n                .map(clienteFiltrado -> (PessoaJuridica) clienteFiltrado)\r\n                .collect(Collectors.toList());\r\n    }\r\n\r\n    public List<Cliente> pesquisarClientes() {\r\n        return storage;\r\n    }\r\n\r\n    public void deletar(String idDeletar) {\r\n        storage\r\n                .removeIf(clienteArmazenado -> clienteArmazenado.getId().equals(idDeletar));\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/controller/respository/ClienteListRepository.java b/src/controller/respository/ClienteListRepository.java
+--- a/src/controller/respository/ClienteListRepository.java	(revision a16838e096d6241d19d8f7d4ee9ea026c05c1127)
++++ b/src/controller/respository/ClienteListRepository.java	(date 1662422253460)
+@@ -9,7 +9,7 @@
+ 
+ public class ClienteListRepository implements ClienteRepository {
+ 
+-    private  static List<Cliente> storage = new ArrayList<>();
++    private static List<Cliente> storage = new ArrayList<>();
+ 
+     private static int idAtual = 1;
+ 
+@@ -23,6 +23,7 @@
+     }
+ 
+     @Override
++    //Retornar cliente pelo id selecionado
+     public Optional<Cliente> pesquisarPorId(String idPesquisado) {
+ 
+         /*for (Cliente cliente : storage) {
+@@ -37,7 +38,19 @@
+                 .filter(clienteArmazenado -> clienteArmazenado.getId().equals(idPesquisado))
+                 .findFirst();
+     }
++    public Optional<PessoaFisica> pesquisarPorCpf(String cpf){
++        return pesquisarPessoasFisicas()
++                .stream()
++                .filter(clienteArmazenado -> clienteArmazenado.getCpf().equals(cpf))
++                .findFirst();
++    }
++    public Optional<PessoaJuridica> pesquisarPorCnpj(String cnpj){
+ 
++        return pesquisarPessoasJuridicas().stream()
++                .filter(clienteArmazenado -> clienteArmazenado.getCnpj().equals(cnpj))
++                .findFirst();
++    }
++    //Retornar Somente os clientes Pessoa fisica
+     public List<PessoaFisica> pesquisarPessoasFisicas() {
+         return storage
+                 .stream()
+@@ -46,6 +59,7 @@
+                 .collect(Collectors.toList());
+     }
+ 
++    //Retornar Somente os clientes Pessoa juridica
+     public List<PessoaJuridica> pesquisarPessoasJuridicas() {
+         return storage
+                 .stream()
+@@ -53,7 +67,7 @@
+                 .map(clienteFiltrado -> (PessoaJuridica) clienteFiltrado)
+                 .collect(Collectors.toList());
+     }
+-
++    //Retornar todos os clientes
+     public List<Cliente> pesquisarClientes() {
+         return storage;
+     }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"bd8334ff-fc57-445b-9b79-a9438404c704\" name=\"Changes\" comment=\"Adicionando muita coisa\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/service/ClienteService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/service/ClienteService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/controller/service/ProdutoService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/controller/service/ProdutoService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/model/Cliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/model/Cliente.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/view/Listar.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/view/Listar.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/view/SubMenu.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/view/SubMenu.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"f3e9b060-dce0-4745-8214-b0a3287793cc\" name=\"Changes by user\" comment=\"Changes by user\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"package-info\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2DMzdzHRvgY0oZWOEf6JSBcYLuQ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/git/restauranteUniversitario&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Application.ControleVendasApplication\">\r\n    <configuration name=\"ControleVendasApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ControleVendasApplication\" />\r\n      <module name=\"controle-vendas\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ClientListRepositoryTest.retornarClientePessoaFisica\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"controle-vendas\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"test.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"test\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"test.ClientListRepositoryTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"retornarClientePessoaFisica\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.ControleVendasApplication\" />\r\n        <item itemvalue=\"JUnit.ClientListRepositoryTest.retornarClientePessoaFisica\" />\r\n        <item itemvalue=\"Application.ControleVendasApplication\" />\r\n        <item itemvalue=\"JUnit.ClientListRepositoryTest.retornarClientePessoaFisica\" />\r\n        <item itemvalue=\"Application.ControleVendasApplication\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"bd8334ff-fc57-445b-9b79-a9438404c704\" name=\"Changes\" comment=\"\" />\r\n      <created>1660523835118</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1660523835118</updated>\r\n      <workItem from=\"1660523836998\" duration=\"3216000\" />\r\n      <workItem from=\"1660585153388\" duration=\"36000\" />\r\n      <workItem from=\"1660664086925\" duration=\"5509000\" />\r\n      <workItem from=\"1660734557562\" duration=\"3027000\" />\r\n      <workItem from=\"1660738210219\" duration=\"6807000\" />\r\n      <workItem from=\"1660747596792\" duration=\"1216000\" />\r\n      <workItem from=\"1660776135390\" duration=\"4915000\" />\r\n      <workItem from=\"1660789990576\" duration=\"1031000\" />\r\n      <workItem from=\"1660791594448\" duration=\"2884000\" />\r\n      <workItem from=\"1660794598649\" duration=\"2612000\" />\r\n      <workItem from=\"1660827295461\" duration=\"12000\" />\r\n      <workItem from=\"1660871965969\" duration=\"13447000\" />\r\n      <workItem from=\"1661014344125\" duration=\"5711000\" />\r\n      <workItem from=\"1661137382339\" duration=\"1039000\" />\r\n      <workItem from=\"1661180836641\" duration=\"24000\" />\r\n      <workItem from=\"1661222652142\" duration=\"6018000\" />\r\n      <workItem from=\"1661781085854\" duration=\"94000\" />\r\n      <workItem from=\"1661864659105\" duration=\"5754000\" />\r\n      <workItem from=\"1661947294739\" duration=\"2253000\" />\r\n      <workItem from=\"1662078345607\" duration=\"15059000\" />\r\n      <workItem from=\"1662141930025\" duration=\"236000\" />\r\n      <workItem from=\"1662142196840\" duration=\"35000\" />\r\n      <workItem from=\"1662144689379\" duration=\"30392000\" />\r\n      <workItem from=\"1662310723745\" duration=\"20701000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Criando Projeto\">\r\n      <created>1660523980511</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1660523980511</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Cadastro pronto\">\r\n      <created>1660882144939</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1660882144939</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Adicionando produto e cliente\">\r\n      <created>1661027202712</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1661027202712</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Adicionando muita coisa\">\r\n      <created>1662250770088</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662250770088</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Adicionando muita coisa\">\r\n      <created>1662258060989</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662258060989</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Adicionando muita coisa\">\r\n      <created>1662314778930</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662314778930</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Refatorando codigo\">\r\n      <created>1662339493435</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662339493435</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Criando Projeto\" />\r\n    <MESSAGE value=\"Cadastro pronto\" />\r\n    <MESSAGE value=\"Adicionando produto e cliente\" />\r\n    <MESSAGE value=\"Adicionando muita coisa\" />\r\n    <MESSAGE value=\"Refatorando codigo\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Refatorando codigo\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.NullPointerException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"5\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a16838e096d6241d19d8f7d4ee9ea026c05c1127)
++++ b/.idea/workspace.xml	(date 1662422647742)
+@@ -1,13 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="bd8334ff-fc57-445b-9b79-a9438404c704" name="Changes" comment="Adicionando muita coisa">
++    <list default="true" id="bd8334ff-fc57-445b-9b79-a9438404c704" name="Changes" comment="Ajustando texto">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/service/ClienteService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/controller/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/service/ProdutoService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cliente.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/view/Listar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Listar.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/view/SubMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/SubMenu.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/respository/ClienteListRepository.java" afterDir="false" />
+     </list>
+     <list id="f3e9b060-dce0-4745-8214-b0a3287793cc" name="Changes by user" comment="Changes by user" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -121,6 +117,7 @@
+       <workItem from="1662142196840" duration="35000" />
+       <workItem from="1662144689379" duration="30392000" />
+       <workItem from="1662310723745" duration="20701000" />
++      <workItem from="1662422176314" duration="467000" />
+     </task>
+     <task id="LOCAL-00001" summary="Criando Projeto">
+       <created>1660523980511</created>
