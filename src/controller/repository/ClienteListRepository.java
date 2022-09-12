@@ -1,4 +1,4 @@
-package controller.respository;
+package controller.repository;
 
 import model.Cliente;
 import model.PessoaFisica;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  *
  * @author Ana Luiza Fernandes e Tales Rodrigues
  * @version 1.0
- * @see controller.respository.ClienteRepository
+ * @see controller.repository.ClienteRepository
  * @since 2022
  */
 public class ClienteListRepository implements ClienteRepository {

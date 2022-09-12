@@ -1,4 +1,4 @@
-package controller.respository;
+package controller.repository;
 
 import model.Cliente;
 import model.PessoaFisica;

@@ -1,10 +1,10 @@
 package controller.service;
 
+import controller.repository.PedidoListRepository;
+import controller.repository.PedidoRepository;
 import controller.service.validator.DadosInvalidosException;
 import controller.service.validator.Validador;
 import model.Pedido;
-import controller.respository.PedidoListRepository;
-import controller.respository.PedidoRepository;
 
 import java.util.List;
 import java.util.Optional;

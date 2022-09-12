@@ -1,4 +1,4 @@
-package controller.respository;
+package controller.repository;
 
 import model.Pedido;
 
@@ -11,7 +11,7 @@ import java.util.Optional;
  *
  * @author Ana Luiza Fernandes e Tales Rodrigues
  * @version 1.0
- * @see controller.respository.PedidoRepository
+ * @see controller.repository.PedidoRepository
  * @since 2022
  */
 public class PedidoListRepository implements PedidoRepository {

@@ -1,4 +1,4 @@
-package controller.respository;
+package controller.repository;
 
 import model.Produto;
 
@@ -12,7 +12,7 @@ import java.util.Optional;
  *
  * @author Ana Luiza Fernandes e Tales Rodrigues
  * @version 1.0
- * @see controller.respository.ProdutoRepository
+ * @see controller.repository.ProdutoRepository
  * @since 2022
  */
 public class ProdutoListRepository implements ProdutoRepository {

@@ -1,10 +1,10 @@
 package controller.service;
 
+import controller.repository.ProdutoListRepository;
+import controller.repository.ProdutoRepository;
 import controller.service.validator.DadosInvalidosException;
 import model.Cliente;
 import model.Produto;
-import controller.respository.ProdutoListRepository;
-import controller.respository.ProdutoRepository;
 
 import java.util.List;
 import java.util.Optional;

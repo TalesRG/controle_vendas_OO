@@ -1,11 +1,11 @@
 package controller.service;
 
+import controller.repository.ClienteListRepository;
+import controller.repository.ClienteRepository;
 import controller.service.validator.DadosInvalidosException;
 import model.Cliente;
 import model.PessoaFisica;
 import model.PessoaJuridica;
-import controller.respository.ClienteRepository;
-import controller.respository.ClienteListRepository;
 
 import java.awt.*;
 import java.util.List;
