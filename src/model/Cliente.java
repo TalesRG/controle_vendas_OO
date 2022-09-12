@@ -54,10 +54,10 @@ public abstract class Cliente {
      * @throws DadosInvalidosException
      */
     public void validarCliente() throws DadosInvalidosException {
-        validarCampoPreenchido(nome, "O campo nome n√£o est√° preenchido, verifique e tente novamente");
-        validarCampoPreenchidoComMascara(telefone, CHAR_MASCARA_TELEFONE, "O campo telefone n√£o est√° preenchido, verifique e tente novamente");
-        validarCampoPreenchido(email, "O campo email n√£o est√° preenchido, verifique e tente novamente");
-        validarCampoPreenchido(endereco, "O campo endere√ßo n√£o est√° preenchido, verifique e tente novamente");
+        validarCampoPreenchido(nome, "O campo nome n„o est· preenchido, verifique e tente novamente");
+        validarCampoPreenchidoComMascara(telefone, CHAR_MASCARA_TELEFONE, "O campo telefone n„oo est· preenchido, verifique e tente novamente");
+        validarCampoPreenchido(email, "O campo email n„o est· preenchido, verifique e tente novamente");
+        validarCampoPreenchido(endereco, "O campo endereÁo n„o est· preenchido, verifique e tente novamente");
     }
 
     public String getNome() {

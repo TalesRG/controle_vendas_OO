@@ -81,7 +81,7 @@ public class PessoaJuridica extends Cliente {
         return "Nome: " + this.getNome() + "\n"
                 + "Telefone: " + this.getTelefone() + "\n"
                 + "Email: " + this.getEmail() + "\n"
-                + "EndereÃ§o: " + this.getEndereco() + "\n"
+                + "Endereço: " + this.getEndereco() + "\n"
                 + "CNPJ: " + this.cnpj;
     }
 

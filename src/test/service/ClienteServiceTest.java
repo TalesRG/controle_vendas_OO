@@ -9,20 +9,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 
-/**
- * Classe para testar metodos da Classe ClienteService.
- *
- * @author Ana Luiza Fernandes e Tales Rodrigues
- * @version 1.0
- * @since 2022
- */
 public class ClienteServiceTest {
-    /**
-     * Teste para retornar o mesmo CPF.
-     *
-     * @return void
-     * @throws DadosInvalidosException
-     */
+
     @Test
     public void deveRetornarMesmoCpf() throws DadosInvalidosException {
         ClienteService clienteService = new ClienteService();
@@ -35,11 +23,7 @@ public class ClienteServiceTest {
 
     }
 
-    /**
-     * Teste Retornar vazio quando passar um CPF nao existente.
-     *
-     * @return void
-     */
+
     @Test
     public void deveRetornarVazioQuandoPassarCpfNaoExistente() {
         ClienteService clienteService = new ClienteService();
@@ -51,11 +35,6 @@ public class ClienteServiceTest {
 
     }
 
-    /**
-     * Teste deve retornar o mesmo CNPJ.
-     *
-     * @throws DadosInvalidosException
-     */
     @Test
     public void deveRetornarMesmoCnpj() throws DadosInvalidosException {
         ClienteService clienteService = new ClienteService();
@@ -68,11 +47,7 @@ public class ClienteServiceTest {
         Assertions.assertEquals(pessoaJuridica.getCnpj(), pessoaEncontrada.get().getCnpj());
     }
 
-    /**
-     * Teste deve retornar vazio quando passar um CNPJ que nao existe.
-     *
-     * @return void
-     */
+
     @Test
     public void deveRetornarVazioQuandoPassarCnpjNaoExistente() {
         ClienteService clienteService = new ClienteService();

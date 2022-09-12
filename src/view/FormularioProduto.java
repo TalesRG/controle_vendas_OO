@@ -77,14 +77,14 @@ public class FormularioProduto extends Componentes {
         fabricante = new JTextField();
         fabricante.setBounds(50, 120, 200, 20);
         add(fabricante);
-        //PreÃ§o de venda
+        //Preço de venda
         criarLabel("R$", 30, 165, 30, 10);
-        criarLabel("PreÃ§o de venda: ", 50, 140, 200, 10);
+        criarLabel("Preço de venda: ", 50, 140, 200, 10);
         precoVenda = new JTextField();
         precoVenda.setBounds(50, 160, 200, 20);
         add(precoVenda);
-        //PreÃ§o de custo
-        criarLabel("PreÃ§o de custo: ", 50, 180, 200, 10);
+        //Preço de custo
+        criarLabel("Preço de custo: ", 50, 180, 200, 10);
         criarLabel("R$", 30, 205, 30, 10);
         precoCusto = new JTextField();
         precoCusto.setBounds(50, 200, 200, 20);

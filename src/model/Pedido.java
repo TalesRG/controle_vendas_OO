@@ -8,43 +8,43 @@ import controller.service.validator.Validador;
  */
 public class Pedido {
     private String id;
-    private String dt_venda;
+    private String dtVenda;
     private String identificadorCliente;
 
     private String indentificadorProduto;
 
-    private int qt_produto;
+    private int qtProduto;
 
     /**
      * Metodo construtor que retorna os dados do pedido com ID.
      *
      * @param id
-     * @param dt_venda
+     * @param dtVenda
      * @param cliente
      * @param produto
-     * @param qt_produto
+     * @param qtProduto
      */
-    public Pedido(String id, String dt_venda, String cliente, String produto, int qt_produto) {
+    public Pedido(String id, String dtVenda, String cliente, String produto, int qtProduto) {
         this.id = id;
-        this.dt_venda = dt_venda;
+        this.dtVenda = dtVenda;
         this.identificadorCliente = cliente;
         this.indentificadorProduto = produto;
-        this.qt_produto = qt_produto;
+        this.qtProduto = qtProduto;
     }
 
     /**
      * Metodo construtor que retorna os dados do pedido.
      *
-     * @param dt_venda
+     * @param dtVenda
      * @param cliente
      * @param produto
-     * @param qt_produto
+     * @param qtProduto
      */
-    public Pedido(String dt_venda, String cliente, String produto, int qt_produto) {
-        this.dt_venda = dt_venda;
+    public Pedido(String dtVenda, String cliente, String produto, int qtProduto) {
+        this.dtVenda = dtVenda;
         this.identificadorCliente = cliente;
         this.indentificadorProduto = produto;
-        this.qt_produto = qt_produto;
+        this.qtProduto = qtProduto;
     }
 
     /**
@@ -55,10 +55,10 @@ public class Pedido {
     @Override
     public String toString() {
         return "Numero Pedido: " + this.id + "\n"
-                + "DATA DE VENDA: " + this.dt_venda + "\n"
+                + "DATA DE VENDA: " + this.dtVenda + "\n"
                 + "Cliente: " + this.identificadorCliente + "\n"
                 + "Produto: " + this.indentificadorProduto + "\n"
-                + "Quantidade " + this.qt_produto;
+                + "Quantidade " + this.qtProduto;
     }
 
     /**
@@ -68,7 +68,7 @@ public class Pedido {
      * @throws DadosInvalidosException
      */
     public void validarPedido() throws DadosInvalidosException {
-        Validador.validarCampoPreenchidoComMascara(dt_venda, Validador.CHAR_MASCARA_DATA, "preencha a data");
+        Validador.validarCampoPreenchidoComMascara(dtVenda, Validador.CHAR_MASCARA_DATA, "preencha a data");
         Validador.validarCampoPreenchido(indentificadorProduto, "Escolha um produto");
         Validador.validarCampoPreenchido(identificadorCliente, "Escolha um cliente");
     }
@@ -76,11 +76,11 @@ public class Pedido {
     /**
      * Esta sobrescrevendo o metodo clone e retornando um objeto pedido.
      *
-     * @return pedido
+     * @return Pedido
      */
     @Override
     public Pedido clone() {
-        Pedido pedido = new Pedido(getId(), getDt_venda(), getIdentificadorCliente(), getIndentificadorProduto(), getQt_produto());
+        Pedido pedido = new Pedido(getId(), getDtVenda(), getIdentificadorCliente(), getIndentificadorProduto(), getQtProduto());
         return pedido;
     }
 
@@ -108,20 +108,20 @@ public class Pedido {
         this.indentificadorProduto = indentificadorProduto;
     }
 
-    public int getQt_produto() {
-        return qt_produto;
+    public int getQtProduto() {
+        return qtProduto;
     }
 
-    public void setQt_produto(int qt_produto) {
-        this.qt_produto = qt_produto;
+    public void setQtProduto(int qtProduto) {
+        this.qtProduto = qtProduto;
     }
 
-    public String getDt_venda() {
-        return dt_venda;
+    public String getDtVenda() {
+        return dtVenda;
     }
 
-    public void setDt_venda(String dt_venda) {
-        this.dt_venda = dt_venda;
+    public void setDtVenda(String dtVenda) {
+        this.dtVenda = dtVenda;
     }
 
 }

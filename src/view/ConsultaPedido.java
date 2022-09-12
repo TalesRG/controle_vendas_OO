@@ -79,9 +79,9 @@ public class ConsultaPedido extends Componentes {
     private void buscarPedido(ActionEvent actionEvent) {
         int idPedidoBusca = Integer.parseInt(JOptionPane.showInputDialog("Insira o id do cliente que deseja buscar"));
         var pedidoEncontrado = pedidoService.retornarPedidoPorId(idPedidoBusca);
-        //Se nÃ£o encotrar cliente mostrar msg de erro caso contrario mostrar o cliente
+        //Se não encotrar cliente mostrar mensagem de erro caso contrario mostrar o cliente
         if (Optional.empty().equals(pedidoEncontrado)) {
-            JOptionPane.showMessageDialog(this, "Cliente nÃ£o encontrado");
+            JOptionPane.showMessageDialog(this, "Cliente não encontrado");
         } else {
             var buscaPedido = pedidoEncontrado
                     .stream()
@@ -128,7 +128,7 @@ public class ConsultaPedido extends Componentes {
         todosPedidos = pedidoService.retornarPedido();
         listaCliente = todosPedidos
                 .stream()
-                .map(c -> "Numero Pedido: " + c.getId() + "  " + c.getIdentificadorCliente() + " - " + c.getDt_venda())
+                .map(c -> "Numero Pedido: " + c.getId() + "  " + c.getIdentificadorCliente() + " - " + c.getDtVenda())
                 .toArray(String[]::new);
 
         consultaPedido.setListData(listaCliente);

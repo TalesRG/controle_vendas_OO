@@ -40,7 +40,7 @@ public class PessoaFisica extends Cliente implements Cloneable {
     @Override
     public void validarCliente() throws DadosInvalidosException {
         super.validarCliente();
-        validarCampoPreenchidoComMascara(cpf, CHAR_MASCARA_CPF, "A algum campo n√£o preenchido, " +
+        validarCampoPreenchidoComMascara(cpf, CHAR_MASCARA_CPF, "A algum campo n„o preenchido, " +
                 "verifique e tente novamente");
     }
 
@@ -54,7 +54,7 @@ public class PessoaFisica extends Cliente implements Cloneable {
         return "Nome: " + this.getNome() + "\n"
                 + "Telefone: " + this.getTelefone() + "\n"
                 + "Email: " + this.getEmail() + "\n"
-                + "Endere√ßo: " + this.getEndereco() + "\n"
+                + "EndereÁo: " + this.getEndereco() + "\n"
                 + "CPF: " + this.cpf;
     }
 

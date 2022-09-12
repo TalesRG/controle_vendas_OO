@@ -86,7 +86,7 @@ public class ConsultaProduto extends Componentes {
         var produtoEncontrado = produtoService.retornarProdutoPorNome(nomeProduto);
 
         if (Optional.empty().equals(produtoEncontrado)) {
-            JOptionPane.showMessageDialog(this, "Produto n√£o encontrado");
+            JOptionPane.showMessageDialog(this, "Produto n„o encontrado");
         } else {
             var buscaProduto = produtoEncontrado
                     .stream()

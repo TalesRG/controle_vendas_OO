@@ -56,8 +56,8 @@ public class Produto {
     public String toString() {
         return "Nome: " + this.nome + "\n"
                 + "Fabricante: " + this.fabricante + "\n"
-                + "PreÃ§o de custo: " + this.precoCusto + "\n"
-                + "PreÃ§o de venda: " + this.precoVenda;
+                + "Preço de custo: " + this.precoCusto + "\n"
+                + "Preço de venda: " + this.precoVenda;
     }
 
     /**

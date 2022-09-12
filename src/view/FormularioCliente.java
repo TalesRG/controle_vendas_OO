@@ -98,13 +98,13 @@ public class FormularioCliente extends Componentes {
         email = new JTextField();
         email.setBounds(50, 200, 200, 20);
         add(email);
-        //Endere√ßo
-        criarLabel("Endere√ßo: ", 50, 220, 200, 20);
+        //EndereÁo
+        criarLabel("EndereÁo: ", 50, 220, 200, 20);
         endereco = new JTextField();
         endereco.setBounds(50, 240, 200, 20);
         add(endereco);
 
-        //Bot√£o Cadastrar
+        //Bot„o Cadastrar
         botaoCadastrarEditar = new JButton("Salvar");
         criarBotao(botaoCadastrarEditar, 50, 280, 100, 20);
 

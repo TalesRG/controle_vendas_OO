@@ -134,7 +134,7 @@ public class ConsultaCliente extends Componentes {
         var clienteEncontrado = clienteService.retornarPorCpf(idClienteBusca);
 
         if (clienteEncontrado.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Cliente n√£o encontrado");
+            JOptionPane.showMessageDialog(this, "Cliente n„o encontrado");
         } else {
             var buscaCliente = clienteEncontrado
                     .stream()
@@ -156,7 +156,7 @@ public class ConsultaCliente extends Componentes {
         var clienteEncontrado = clienteService.retornarPorCnpj(idClienteBusca);
 
         if (clienteEncontrado.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Cliente n√£o encontrado");
+            JOptionPane.showMessageDialog(this, "Cliente n„o encontrado");
         } else {
             var buscaCliente = clienteEncontrado
                     .stream()

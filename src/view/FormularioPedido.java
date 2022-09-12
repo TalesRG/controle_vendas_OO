@@ -55,10 +55,10 @@ public class FormularioPedido extends Componentes {
         this.callBackAtualizarLista = callBackAtualizarLista;
         pedidoEditar = pedido;
         pedidoEditar.setId(pedido.getId());
-        dt_venda.setText(pedido.getDt_venda());
+        dt_venda.setText(pedido.getDtVenda());
         cliente_pedido.setSelectedItem(pedido.getIdentificadorCliente());
         produto_pedido.setSelectedItem(pedido.getIndentificadorProduto());
-        quantidade_Produto.setText(String.valueOf(pedido.getQt_produto()));
+        quantidade_Produto.setText(String.valueOf(pedido.getQtProduto()));
     }
 
     /**
@@ -160,10 +160,10 @@ public class FormularioPedido extends Componentes {
      * @return void
      */
     private void preencherDadosPedidoEditar() {
-        pedidoEditar.setDt_venda(dt_venda.getText());
+        pedidoEditar.setDtVenda(dt_venda.getText());
         pedidoEditar.setIdentificadorCliente(String.valueOf(cliente_pedido.getSelectedItem()));
         pedidoEditar.setIndentificadorProduto(String.valueOf((produto_pedido.getSelectedItem())));
-        pedidoEditar.setQt_produto(Integer.parseInt(quantidade_Produto.getText()));
+        pedidoEditar.setQtProduto(Integer.parseInt(quantidade_Produto.getText()));
     }
 
     /**
